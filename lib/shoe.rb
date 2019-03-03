@@ -17,7 +17,7 @@ class Shoe
   def brand=(input)
     @brand = input
     BRANDS << input
-    BRANDS = BRANDS.flatten
+    BRANDS = BRANDS.uniq
   end
 
   def brand
