@@ -6,7 +6,7 @@ class Shoe
   def initialize(brand)
     @brand = brand
     BRANDS << brand
-    BRANDS.flatten
+    BRANDS = BRANDS.flatten
   end
 
   def cobble
@@ -17,7 +17,7 @@ class Shoe
   def brand=(input)
     @brand = input
     BRANDS << input
-    BRANDS.flatten
+    BRANDS = BRANDS.flatten
   end
 
   def brand
